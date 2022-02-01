@@ -67,8 +67,6 @@
 // document.write(`${ccc}`);
 
 
-
-
 // Переприсвоїти кожній змінній з завдання значення на довільне.
 //     Вивести кожну змінну за допомогою: console.log , alert, document.write
 
@@ -138,8 +136,6 @@
 // document.write(`<div>${ccc}</div>`);
 
 
-
-
 // -Створити
 // 3
 // змінних
@@ -164,19 +160,17 @@
 // console.log(person);
 
 
-
-
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
-// let name = prompt('Welcome', 'Pavlo');
-// console.log(name);
-// let middleName = prompt('middle name', 'Igorovuch');
-// console.log(middleName);
-// let age = prompt('Age', '27 years old');
-// console.log(age);
+let name = prompt('Welcome', 'Pavlo');
+console.log(name);
+let middleName = prompt('middle name', 'Igorovuch');
+console.log(middleName);
+let age = prompt('Age', '27 years old');
+console.log(age);
 
-
+let variable = prompt('Welcome', name + " " + middleName + " " + "You" + " " + age)
 
 
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль
@@ -189,8 +183,6 @@
 //
 // let c = true;
 // console.log(typeof c);
-
-
 
 
 // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
@@ -220,19 +212,17 @@
 // console.log(123 === 123);
 
 
-
-
 // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
 
-let str = "20";
-console.log(typeof str);
-let a = 5;
-console.log(typeof a);
-document.write(str + a + "<br/>");
-// просто з'єднює два значення, тому що "str"-це стрінга, 'а'-теж стає стрінгою
-document.write(str - a + "<br/>");
-// тому що таке є в JS )))))
-document.write(str * "2" + "<br/>");
-// дія множення
-document.write(str / 2 + "<br/>");
-// дія ділення
+// let str = "20";
+// console.log(typeof str);
+// let a = 5;
+// console.log(typeof a);
+// document.write(str + a + "<br/>");
+// // просто з'єднює два значення, тому що "str"-це стрінга, 'а'-теж стає стрінгою
+// document.write(str - a + "<br/>");
+// // тому що таке є в JS )))))
+// document.write(str * "2" + "<br/>");
+// // дія множення
+// document.write(str / 2 + "<br/>");
+// // дія ділення
