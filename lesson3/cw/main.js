@@ -28,7 +28,7 @@
 // i = 0;
 // while (i < nmb3.length) {
 //     i++;
-//     if (i % 2 !== 1) {
+//     if (i % 2 !== 0) {
 //         console.log(nmb3[i]);
 //     }
 // }
@@ -73,6 +73,63 @@
 //
 // }
 
+
+
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
+// let nmb1 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// let i = nmb1.length - 1;
+// while (i) {
+//     let numberOne = nmb1[i];
+//     i--;
+//     console.log(numberOne);
+// }
 
+// let nmb2 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// for (let i = nmb2.length-1; i >=0 ; i--) {
+//     let nmb2Element = nmb2[i];
+//     console.log(nmb2Element);
+// }
+
+// let nmb3 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// i = nmb3.length-1;
+// while (i >= 0) {
+//     i--;
+//     if (i % 2 !== 0) {
+//         console.log(nmb3[i]);
+//     }
+// }
+
+// let nmb4 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// for (let i = nmb4.length-1; i >=0 ; i--) {
+//     if (i % 2 !== 0) {
+//         console.log(nmb4[i]);
+//     }
+// }
+
+// let nmb5 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// i = nmb5.length-1;
+// while (i >=0) {
+//     if (i % 2 === 0) {
+//         console.log(nmb5[i]);
+//     }
+//     i--;
+// }
+
+// let nmb6 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// for (let i = nmb6.length - 1; i >= 0; i--) {
+//     if (i % 2 === 0) {
+//         console.log(nmb6[i]);
+//     }
+//
+// }
+
+// let nmb7 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// for (let i = nmb7.length - 1; i >= 0; i--) {
+//     if (nmb7[i] % 3 === 0) {
+//         nmb7[i] = 'okten';
+//         console.log(nmb7[i]);
+//     }
+//     console.log(nmb7)
+//
+// }
