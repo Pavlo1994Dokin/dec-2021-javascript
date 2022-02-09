@@ -132,10 +132,27 @@
 // document.write(arrayRandom(22));
 
 
-
 //- створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+//
+// function Randomayzer (limit, nmb) {
+//     let random= [];
+//     for (let i = 0; i < nmb; i++) {
+//         random.push(Math.floor(Math.random() * limit));
+//     }
+//     return random;
+// }
+// document.write(Randomayzer(21, 12));
 
 
+//- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 
+// function SomeArray(array) {
+//     let newArray = [];
+//     for (let i = array.length-1; i >= 0; i--) {
+//          newArray.push(array[i]);
+//     }
+//     return newArray;
+// }
+// console.log(SomeArray([10,11,22,33]));
 
 
