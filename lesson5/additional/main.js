@@ -83,5 +83,20 @@
 // }
 // console.log(SomeArray(foo));
 
-
+// let foo = [0, 1, 2, 3, 0, 4];
+//
+// let SomeArray = (array) => {
+//     let a = [];
+//     let b = [];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === 0) {
+//             a.push(array[i]);
+//         } else if (array[i] !== 0) {
+//             b.push(array[i]);
+//         }
+//     }
+//     let c = b.concat(a);
+//     return c;
+// }
+// console.log(SomeArray(foo));
 
