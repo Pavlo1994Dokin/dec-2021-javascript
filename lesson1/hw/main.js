@@ -147,6 +147,7 @@
 // єкт
 // )
 
+
 // let firstName = 'Dokin';
 // console.log(firstName)
 //
@@ -163,14 +164,14 @@
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
-let name = prompt('Welcome', 'Pavlo');
-console.log(name);
-let middleName = prompt('middle name', 'Igorovuch');
-console.log(middleName);
-let age = prompt('Age', '27 years old');
-console.log(age);
-
-let variable = prompt('Welcome', name + " " + middleName + " " + "You" + " " + age)
+// let name = prompt('Welcome', 'Pavlo');
+// console.log(name);
+// let middleName = prompt('middle name', 'Igorovuch');
+// console.log(middleName);
+// let age = prompt('Age', '27 years old');
+// console.log(age);
+//
+// let variable = prompt('Welcome', name + " " + middleName + " " + "You" + " " + age)
 
 
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль
