@@ -19,6 +19,8 @@
 // some.email@gmail.com
 
 
+
+
 //- є масивlet coursesArray = [
 // відсортувати його в спадаючому порядку за кількістю елементів в полі modules
 
@@ -119,15 +121,13 @@
 // document.writeln(cutString(str, 5)) // 'Сила тяжести приложена к центру'
 
 // let cutString = (str, n) => {
-// let some=[];
-//     for (let i = 0; i < str.length; i++) {
-//     if ( str.substr(1,5)){
-//         some.push(str.substr);
+//     let some = [];
+//     let strSplit = str.split(' ');
+//     for (let i = 0; i < n; i++) {
+//         some.push(strSplit[i]);
 //     }
-//     }
-//     return some.length;
+//     return some.join(' ');
 // }
 //
 // let str = "Сила тяжести приложена к центру масс тела";
 // console.log(cutString(str, 5));
-// шось таки в голову не лізе як то правильно вивести
