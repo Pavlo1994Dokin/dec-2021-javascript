@@ -54,7 +54,7 @@ class Cliner {
 // створити пустий масив, наповнити його 10 об'єктами Client
 
 
-let SomeCliner = [
+let someCliner = [
     new Cliner(211, 'kokos', 'kos', 'koks@globys', 12345292121, ['book', 'psp', 'pen']),
     new Cliner(222, 'pop', 'koko', 'kokos@gobys', 101324121, ['psp', 'pen']),
     new Cliner(13, 'ul', 'zebrov', 'koks@glbys', 1022922345, ['book', 'pensil', 'oluver', 'psp', 'pen']),
@@ -66,10 +66,10 @@ let SomeCliner = [
     new Cliner(11, 'yulya', 'loo', 'koks@gmais', 5634232292121, ['book', 'psp', 'pen']),
     new Cliner(1, 'koks', 'kokos', 'kos@mys', 7895421, ['book', 'psp', 'pen'])
 ]
-console.log(SomeCliner);
+console.log(someCliner);
 
 //- Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 
-let SortSomeCliner = SomeCliner.sort((a, b) => a.order.length - b.order.length)
-console.log(SortSomeCliner);
+let sortSomeCliner = someCliner.sort((a, b) => a.order.length - b.order.length)
+console.log(sortSomeCliner);
 
