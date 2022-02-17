@@ -13,13 +13,18 @@ function Car(model, manufacturer, year, max_speed, engine) {
     this.max_speed = max_speed;
     this.engine = engine;
     this.drive = function () {
-        console.log(`їдемо зі швидкістю ${this.max_speed} на годину`)
+        console.log(`їдемо зі швидкістю ${this.max_speed} на годину`);
+    };
+    this.info = function () {
+        for (const key in this) {
+            if (typeof this[key] !== 'function') console.log(`${key} - ${this[key]}`)
+        }
     }
-
 
 
 }
 
-let car = new Car('BMW', 'Germany', 1999, 280, 3.5)
+let car = new Car('BMW', 'Germany', 1999, 280, 3.5);
 console.log(car);
 
+car.info();
