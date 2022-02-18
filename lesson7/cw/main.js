@@ -102,9 +102,9 @@
 
 
 class Popelyshka {
-    constructor(name, eight, size_foot) {
+    constructor(name, age, size_foot) {
         this.name = name;
-        this.eight = eight;
+        this.age = age;
         this.size_foot = size_foot;
     }
 }
@@ -115,17 +115,34 @@ let arrPopelyshka = [
     new Popelyshka('kamila', 25, 36),
     new Popelyshka('alina', 19, 28),
     new Popelyshka('karolina', 21, 32),
-    new Popelyshka('yulya', 24, 35),
+    new Popelyshka('yulya', 24, 44),
     new Popelyshka('solomia', 33, 38),
     new Popelyshka('lida', 27, 39),
     new Popelyshka('lina', 38, 40),
     new Popelyshka('erika', 27, 33),
 ];
+console.log(arrPopelyshka);
 
 class Princ {
-    constructor(name, eight, findShoose) {
+    constructor(name, age, findShoose) {
         this.name = name;
-        this.eight = eight;
+        this.age = age;
         this.findShoose = findShoose;
     }
 }
+
+let princ = new Princ('vasya', 27, 35);
+
+
+let newPara = (arrPopelyshka, princ) => {
+    for (const popelyshkaItem of arrPopelyshka) {
+        if (popelyshkaItem.size_foot === princ.findShoose) {
+            return `your popelychka ${popelyshkaItem.size_foot}`
+        }
+
+    }
+}
+console.log(Para = (arrPopelyshka, princ));
+
+let SomePopelychka = arrPopelyshka.find((item) => item.size_foot === princ.findShoose);
+console.log(SomePopelychka);
