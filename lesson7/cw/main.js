@@ -142,7 +142,7 @@ let newPara = (arrPopelyshka, princ) => {
 
     }
 }
-console.log(Para = (arrPopelyshka, princ));
+console.log(newPara(arrPopelyshka, princ));
 
 let SomePopelychka = arrPopelyshka.find((item) => item.size_foot === princ.findShoose);
 console.log(SomePopelychka);
