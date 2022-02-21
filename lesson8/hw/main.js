@@ -13,6 +13,7 @@
 // console.log(document.getElementById('content'));
 
 
+
 //     -- отримує текст з блоку з id "rules"
 // let rulesId = document.getElementById('rules');
 // console.log(rulesId);
@@ -52,3 +53,4 @@
 // for (const colorTxtElement of colorTxtElements) {
 //     colorTxtElement.style.color = 'red'
 // }
+
