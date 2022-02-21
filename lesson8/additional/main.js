@@ -3,16 +3,12 @@
 
 
 let a = [];
-console.log(a);
 let f = (rules) => {
-    if (rules.children.length) {
-        for (const item of rules.children) {
-            f(item);
+        if (rules.getElementsByClassName('rules')) {
+            a.push(rules.getElementsByClassName('rules'));
         }
-        if (rules.className.includes(' ')) {
-            let c = rules.className.split(' ')
-            a.push(c[1])
-        }
-    }
+
+    return a
 }
+console.log(a);
 f(document.body)
