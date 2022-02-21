@@ -2,13 +2,10 @@
 //
 
 
-let a = [];
-let f = (rules) => {
-        if (rules.getElementsByClassName('rules')) {
-            a.push(rules.getElementsByClassName('rules'));
-        }
-
-    return a
+let arr = []
+for (const arrayElement of array) {
+    let aa = arrayElement.split(' ')
+    for (const aaElement of aa) {
+        arr.push(aaElement)
+    }
 }
-console.log(a);
-f(document.body)
