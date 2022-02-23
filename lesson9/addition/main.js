@@ -245,19 +245,36 @@ for (const usersElement of usersList) {
     let emailUser = document.createElement('div');
     emailUser.innerText = usersElement.email;
 
+
     let addressUl = document.createElement('ul');
     for (const addressUserElementKey in usersElement.address) {
         let address = document.createElement('li');
         address.innerText = usersElement.address[addressUserElementKey];
         addressUl.append(address);
-        //
+
+
         // let addressGeo = document.createElement('ul');
         // for (const addressGeoKey in addressUserElementKey.geo) {
         //     let geo = document.createElement('li');
         //     geo.innerText = addressUserElementKey.geo[addressGeoKey];
         //     addressGeo.append(geo);
         // }
+
     }
-    userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUl)
+
+    let phoneUser = document.createElement('div');
+    phoneUser.innerText = usersElement.phone;
+    let websiteUser = document.createElement('div');
+    websiteUser.innerText = usersElement.website
+
+    let companyUserUl = document.createElement('ul');
+    for (const companyUserKey in usersElement.company) {
+        let company = document.createElement('li');
+        company.innerText = usersElement.company[companyUserKey];
+        companyUserUl.append(company);
+    }
+
+
+    userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUl, phoneUser, websiteUser, companyUserUl);
     document.body.append(userArray);
 }
