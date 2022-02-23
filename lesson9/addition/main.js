@@ -253,13 +253,12 @@ for (const usersElement of usersList) {
         addressUl.append(address);
 
     }
-    let addressGeo = document.createElement('ul');
-    for (const addressGeoKey in usersElement.address.geo) {
-        let geo = document.createElement('li');
-        geo.innerText = usersElement.address.geo[addressGeoKey];
-        addressGeo.append(geo);
-    }
+    for (const addressUlKey in usersElement.address.geo) {
+        let addressGeo = document.createElement('li')
+        addressGeo.innerText = usersElement.address.geo[addressUlKey];
+        addressUl.append(addressGeo);
 
+    }
 
     let phoneUser = document.createElement('div');
     phoneUser.innerText = usersElement.phone;
@@ -274,6 +273,6 @@ for (const usersElement of usersList) {
     }
 
 
-    userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUl, addressGeo, phoneUser, websiteUser, companyUserUl);
+    userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUl, phoneUser, websiteUser, companyUserUl);
     document.body.append(userArray);
 }
