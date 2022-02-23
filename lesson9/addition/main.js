@@ -251,14 +251,16 @@ for (const usersElement of usersList) {
         let address = document.createElement('li');
         address.innerText = usersElement.address[addressUserElementKey];
         addressUl.append(address);
-
     }
+
+    let geoUserUl=document.createElement('ul');
     for (const addressUlKey in usersElement.address.geo) {
-        let addressGeo = document.createElement('li')
-        addressGeo.innerText = usersElement.address.geo[addressUlKey];
-        addressUl.append(addressGeo);
-
+        let Geo = document.createElement('div');
+        Geo.innerText = usersElement.address.geo[addressUlKey];
+        geoUserUl.append(Geo);
+        addressUl.append(geoUserUl);
     }
+
 
     let phoneUser = document.createElement('div');
     phoneUser.innerText = usersElement.phone;
