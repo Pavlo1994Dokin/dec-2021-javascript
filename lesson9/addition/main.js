@@ -245,22 +245,19 @@ for (const usersElement of usersList) {
     let emailUser = document.createElement('div');
     emailUser.innerText = usersElement.email;
 
-
-    let addressUserArray = document.createElement('ul');
-    for (const addresItem in usersElement.address) {
-        let addres = document.createElement('li');
-        addres.innerText = addresItem
-        addressUserArray.append(addres)
-
-        let addressGeoUser = document.createElement('ul');
-        for (const addressGeoElement in addresItem.geo) {
-            let geo = document.createElement('li');
-            geo.innerText = addressGeoElement
-            addressGeoUser.append(geo)
-        }
-        userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUserArray, addressGeoUser);
-        document.body.appendChild(userArray)
-
+    let addressUl = document.createElement('ul');
+    for (const addressUserElementKey in usersElement.address) {
+        let address = document.createElement('li');
+        address.innerText = usersElement.address[addressUserElementKey];
+        addressUl.append(address);
+        //
+        // let addressGeo = document.createElement('ul');
+        // for (const addressGeoKey in addressUserElementKey.geo) {
+        //     let geo = document.createElement('li');
+        //     geo.innerText = addressUserElementKey.geo[addressGeoKey];
+        //     addressGeo.append(geo);
+        // }
     }
-
+    userArray.append(idUser, nameUser, userNameUsers, emailUser, addressUl)
+    document.body.append(userArray);
 }
